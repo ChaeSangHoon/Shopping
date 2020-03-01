@@ -228,8 +228,45 @@
 }
 .ec-base-product .prdList .thumbnail{}
 .ec-base-product .prdList .thumbnail .icon{
+  visibility: hidden;
   position: absolute;
-  display: inline-block;
-  top:50%
-  transform:translateY(-100%);
+  left:110px;
+  top:96%;
+  transform: translateY(-100%);
+}
+.ec-base-product .prdList .thumbnail:hover .icon{
+  visibility: visible;
+}
+.ec-base-product .prdList .thumbnail .icon_top{
+  visibility: hidden;
+  position: absolute;
+  left:170px;
+  transform: translateY(-100%);
+}
+.ec-base-product .prdList .thumbnail:hover .icon_top{
+  visibility: visible;
+}
+
+.ec-base-product .prdList .thumbnail:hover a img{
+  opacity: 0.6;
+  border:solid 1px black;
+}
+.ec-base-product .prdList .thumbnail a img{
+  border:solid 1px transparent;
+}
+
+.ec-base-product .prdList .thumbnail .button img{
+  margin-right:10px !important;
+}
+#banner_area{
+  padding-top:60px;
+  overflow: hidden;
+  text-align: center;
+}
+#banner_area h2{
+  margin-bottom:30px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #2e2e2e;
+  text-align: center;
 }
