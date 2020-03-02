@@ -263,10 +263,29 @@
   overflow: hidden;
   text-align: center;
 }
-#banner_area h2{
+
+#insta{
+  padding-top:60px;
+  overflow: hidden;
+  text-align: center;
+}
+#insta .contain{
+  margin:0 auto;
+  max-width: 1400px
+}
+
+
+h2{
   margin-bottom:30px;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #2e2e2e;
+  text-align: center;
+}
+h2 span{
+  margin-bottom:30px;
+  font-weight: bold;
+  font-size: 40px;
   color: #2e2e2e;
   text-align: center;
 }
