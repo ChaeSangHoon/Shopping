@@ -273,7 +273,11 @@
   margin:0 auto;
   max-width: 1400px
 }
-
+#insta_event{
+  padding-top:60px;
+  overflow: hidden;
+  text-align: center;
+}
 
 h2{
   margin-bottom:30px;
