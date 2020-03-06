@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* @css(/css/myfont.css) */
 /* Layout */
-
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic:800&display=swap&subset=korean');
 .Dr_Top_Bg {width:100%; background-color: rgba(255,255,255,0.2)}
 .Dr_Top_Wrap {width:100%; border-bottom:1px solid #ccc; position:fixed; top:0; left:0; z-index:200; background:rgba(255,255,255,0.5);}
 .Dr_Top_Wrap .Dr_Top_Inner {width:1400px; margin:0 auto;}
@@ -48,6 +48,7 @@
 #footer:before { position:absolute; top:44px; left:0; content:""; width:100%; height:0; border-bottom:1px solid #e8e8e8; }
 #footer .inner { overflow:hidden; position:relative; width:1218px; margin:0 auto -45px; *zoom:1; }
 #footer .inner:after {  content:""; display:block; clear:both; }
+
 
 /* Main */
 #boardArea { overflow:hidden; margin:50px 0 0; border-top:1px solid #d8d8d8; }
@@ -98,7 +99,14 @@
 #modalBackpanel { display:none; position:absolute; top:0; left:0; z-index:10000; width:100%; height:100%; background:#000; }
 #modalContainer { display:none; position:absolute; top:100px; left:100px; z-index:10001; width:975px; height:720px; border:1px solid #333; background:#fff; }
 #modalContainer #modalContent { width:100%; height:100%; }
-
+.contain{
+  max-width:1400px;
+  margin:0 auto;
+}
+.insta_inner{
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .tableCellMom{
   display: table;
@@ -273,11 +281,7 @@
   margin:0 auto;
   max-width: 1400px
 }
-#insta_event{
-  padding-top:60px;
-  overflow: hidden;
-  text-align: center;
-}
+
 
 h2{
   margin-bottom:30px;
@@ -292,4 +296,38 @@ h2 span{
   font-size: 40px;
   color: #2e2e2e;
   text-align: center;
+}
+#insta_event{
+  padding-top:60px;
+  overflow: hidden;
+}
+#insta_event .color100{
+  background-color:#e85df1a1;
+}
+#insta_event .text_part{
+  text-align:left;
+  width: calc(50% - 10px);
+  line-height:75px;
+}
+#insta_event .img_part{
+  text-align: right;
+  width:50%;
+}
+#insta_event h3{
+  font-size:50px;
+  font-family:'Black Han Sans';
+}
+#insta_event p .fir_txt{
+  font-size:90px;
+  color:#fd0fa6;
+  letter-spacing: 23px;
+  font-family:'Black Han Sans';
+}
+#insta_event p .sec_txt{
+  font-family: 'Nanum Gothic' ;
+  font-size:26px;
+  font-weight: 800;
+}
+#insta_event .thr_txt{
+  font-size:18px;
 }
